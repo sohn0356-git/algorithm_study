@@ -20,7 +20,7 @@
 *  
 *  
 * 손경주(6)
-  * 사용가능 언어 : Python, Java, C++
+  * 사용가능 언어 : C++(주 언어), Python, Java
   * 취미 : 운동, 독서, 영화
   * 개발분야 : Embedded System, Android App Develop
   * Blog : [경주의 코딩일기](https://sohn0356-git.github.io)
