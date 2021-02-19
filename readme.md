@@ -12,7 +12,7 @@
 
   문제 갯수 적기(목표는 모든 참가자가 이 문제들 다 풀 수 있는 수준)
 
-　
+* 자신의 주 언어(알고리즘 문제를 풀 때 사용할)를 기록하기
 
 * How to push
   1. git clone https://github.com/sohn0356-git/algorithm_study.git
@@ -22,14 +22,12 @@
   5. git commit -m '커밋 메시지'
   7. git push origin master   (본인 깃헙 계정으로)
 
-
-
 * 백준 solved.ac 추가하는 법
 
   * solved.ac란? -> 백준 난이도 측정기 (Chrome 확장 프로그램)
   * Chrome 확장프로그램 -> 웹스토어에서 solved.ac 검색 후 설치
 
-  ![캡처](md-images/108507193-4b446d00-72fd-11eb-9dab-063c7df413b2.JPG)
+![캡처](md-images/108507193-4b446d00-72fd-11eb-9dab-063c7df413b2.JPG)
 
   
 
