@@ -14,6 +14,25 @@
 
 　
 
+* How to push
+  1. git clone https://github.com/sohn0356-git/algorithm_study.git
+  2. local에 받아진 폴더에서 파일 수정
+  3. git add . 
+  4. git commit -m '커밋 메시지'
+  5. git pull origin master
+  6. git push origin master   (본인 깃헙 계정으로)
+
+
+
+* 백준 solved.ac 추가하는 법
+
+  * solved.ac란? -> 백준 난이도 측정기 (Chrome 확장 프로그램)
+  * Chrome 확장프로그램 -> 웹스토어에서 solved.ac 검색 후 설치
+
+  ![캡처](md-images/108507193-4b446d00-72fd-11eb-9dab-063c7df413b2.JPG)
+
+  
+
 ## 참가자
 
 * 
