@@ -20,5 +20,16 @@
   * 개발분야 : Embedded System, Android App Develop
   * Blog : [경주의 코딩일기](https://sohn0356-git.github.io)
   * Contact : sohn0356@naver.com  
-*  
-*  
+
+- 
+
+- 
+
+- 
+- 조재언
+  - 사용할 수 있는 언어 : Python
+  - email: injoe90@gmail.com
+
+- 
+
+- 
