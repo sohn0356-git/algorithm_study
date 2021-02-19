@@ -15,13 +15,17 @@
 * 자신의 주 언어(알고리즘 문제를 풀 때 사용할)를 기록하기
 
 * How to push
-  1. git clone https://github.com/sohn0356-git/algorithm_study.git
-  2. local에 받아진 폴더에서 파일 수정
-  3. git pull origin master 
-  4. git add . 
-  5. git commit -m '커밋 메시지'
-  7. git push origin master   (본인 깃헙 계정으로)
 
+  * git 생성
+
+    1.  	git clone https://github.com/sohn0356-git/algorithm_study.git
+
+  * local에 받아진 폴더에서 파일 수정
+    1. git add . 
+    2. git commit -m '커밋 메시지'
+    3. git pull origin master   
+    4. git push origin master   (본인 깃헙 계정으로)
+  
 * 백준 solved.ac 추가하는 법
 
   * solved.ac란? -> 백준 난이도 측정기 (Chrome 확장 프로그램)
