@@ -55,3 +55,7 @@
   - 사용가능 언어 : Java(주 언어), Python(서브), C
   - 개발분야 : Embedded System, Android App Develop + Web
   - Contact : khshim100@naver.com
+- 김우림(4)
+  - 사용가능 언어 : Python(주 언어),  Java, C++
+  - 개발분야 : Web, Android App
+  - Contact : woorim1022@naver.com
