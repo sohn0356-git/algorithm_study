@@ -61,3 +61,6 @@
   - 사용가능 언어 : Python(주 언어),  Java, C++
   - 개발분야 : Web, Android App
   - Contact : woorim1022@naver.com
+- 한상범
+  - 사용가능 언어 : Python(조금)
+  - Contact : tkdqja8@naver.com
