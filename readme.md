@@ -33,6 +33,6 @@
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
 - 심기훈
-  - 사용가능 언어 : Python, Java, C
+  - 사용가능 언어 : Java(주 언어), Python(서브), C
   - 개발분야 : Embedded System, Android App Develop + Web
   - Contact : khshim100@naver.com
