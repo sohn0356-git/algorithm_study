@@ -50,7 +50,7 @@
 - 목민수 (angriff1)
   - 사용가능 언어 : C, Python
   - 취미 : 역사 관련 독서, 게임
-- 조재언
+- 조재언(2)
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
 - 심기훈
