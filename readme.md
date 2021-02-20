@@ -50,7 +50,7 @@
 - 목민수 (angriff1)
   - 사용가능 언어 : C, Python
   - 취미 : 역사 관련 독서, 게임
-- 조재언
+- 조재언(2)
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
 - 심기훈
@@ -61,3 +61,20 @@
   - 사용가능 언어 : Python(주 언어),  Java, C++
   - 개발분야 : Web, Android App
   - Contact : woorim1022@naver.com
+- 한상범
+  - 사용가능 언어 : Python(조금)
+  - Contact : tkdqja8@naver.com
+- 김동언
+  - 사용가능 언어 : C++, C, Python
+  - Contact : gold3987@naver.com
+- 박기완(5)
+  - 사용가능 언어 : C(주 언어), Python, C++
+  
+  - 취미 : 산책
+  
+  - Contact : gioan92@naver.com
+  
+
+- 계해범
+  - 사용가능 언어 : Python
+  - Contact : cano721@naver.com
