@@ -67,3 +67,7 @@
 - 김동언
   - 사용가능 언어 : C++, C, Python
   - Contact : gold3987@naver.com
+- 박기완(5)
+  - 사용가능 언어 : C(주 언어), Python, 
+  - 취미 : 산책
+  - Contact : gioan92@naver.com
