@@ -64,3 +64,6 @@
 - 한상범
   - 사용가능 언어 : Python(조금)
   - Contact : tkdqja8@naver.com
+- 김동언
+  - 사용가능 언어 : C++, C, Python
+  - Contact : gold3987@naver.com
