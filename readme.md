@@ -14,6 +14,8 @@
 
 * 자신의 주 언어(알고리즘 문제를 풀 때 사용할)를 기록하기
 
+* 과제 commit시 commit msg로 꼭 작성날짜 입력해주기
+
 * How to push
 
   * git 생성
