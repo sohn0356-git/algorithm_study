@@ -46,9 +46,10 @@
   * Blog : [경주의 코딩일기](https://sohn0356-git.github.io)
   * Contact : sohn0356@naver.com
 
-- 목민수 (angriff1) - 중급
+- 목민수(6) (angriff1) - 중급 <img src="./md-images/minsu.png" height = "30" width="30">
   - 사용가능 언어 : C, Python
   - 취미 : 역사 관련 독서, 게임
+  - Contact : dawmf@naver.com
 - 조재언(2) - 중급
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
