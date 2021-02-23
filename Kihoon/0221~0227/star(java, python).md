@@ -31,7 +31,7 @@ Python
 
 ```python
 
-n = input("숫자입력: ")
+n = input()
 n=int(n)
 s=0;
 
