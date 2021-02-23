@@ -14,6 +14,8 @@
 
 * 자신의 주 언어(알고리즘 문제를 풀 때 사용할)를 기록하기
 
+* 과제 commit시 commit msg로 꼭 작성날짜 입력해주기
+
 * How to push
 
   * git 생성
@@ -37,9 +39,6 @@
 
 ## 참가자
 
-* 
-*  
-*  
 * 손경주(6)
   * 사용가능 언어 : C++(주 언어), Python, Java
   * 취미 : 운동, 독서, 영화
@@ -47,34 +46,33 @@
   * Blog : [경주의 코딩일기](https://sohn0356-git.github.io)
   * Contact : sohn0356@naver.com
 
-- 목민수 (angriff1)
+- 목민수 (angriff1) - 중급
   - 사용가능 언어 : C, Python
   - 취미 : 역사 관련 독서, 게임
-- 조재언(2)
+- 조재언(2) - 중급
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
-- 심기훈
+- 심기훈(3) - 초급
   - 사용가능 언어 : Java(주 언어), Python(서브), C
   - 개발분야 : Embedded System, Android App Develop + Web
   - Contact : khshim100@naver.com
-- 김우림(4)
+- 김우림(4) - 초급
   - 사용가능 언어 : Python(주 언어),  Java, C++
   - 개발분야 : Web, Android App
   - Contact : woorim1022@naver.com
-- 한상범
+- 한상범 - 초급
   - 사용가능 언어 : Python(조금)
   - Contact : tkdqja8@naver.com
-- 김동언
+- 김동언 - 초급
   - 사용가능 언어 : C++, C, Python
   - Contact : gold3987@naver.com
-- 박기완(5)
+- 박기완(5) - 중급
   - 사용가능 언어 : C(주 언어), Python, C++
   
   - 취미 : 산책
   
   - Contact : gioan92@naver.com
   
-
-- 계해범
+- 계해범 - 초급
   - 사용가능 언어 : Python
   - Contact : cano721@naver.com
