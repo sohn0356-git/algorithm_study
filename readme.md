@@ -39,7 +39,7 @@
 
 ## 참가자
 
-* 손경주(6)
+* 손경주(6) <img src="./md-images/gyeongju.png" height = "30" width="30">
   * 사용가능 언어 : C++(주 언어), Python, Java
   * 취미 : 운동, 독서, 영화
   * 개발분야 : Embedded System, Android App Develop
@@ -52,27 +52,27 @@
 - 조재언(2) - 중급
   - 사용할 수 있는 언어 : Python
   - email: injoe90@gmail.com
-- 심기훈(3) - 초급
+- 심기훈(3) - 초급 <img src="./md-images/kihoon.png" height = "30" width="30">
   - 사용가능 언어 : Java(주 언어), Python(서브), C
   - 개발분야 : Embedded System, Android App Develop + Web
   - Contact : khshim100@naver.com
-- 김우림(4) - 초급
+- 김우림(4) - 초급 <img src="./md-images/woorim.png" height = "30" width="30">
   - 사용가능 언어 : Python(주 언어),  Java, C++
   - 개발분야 : Web, Android App
   - Contact : woorim1022@naver.com
-- 한상범 - 초급
+- 한상범 - 초급 <img src="./md-images/sangb.png" height = "30" width="30">
   - 사용가능 언어 : Python(조금)
   - Contact : tkdqja8@naver.com
-- 김동언 - 초급
+- 김동언 - 초급 <img src="./md-images/dongeon.png" height = "30" width="30">
   - 사용가능 언어 : C++, C, Python
   - Contact : gold3987@naver.com
-- 박기완(5) - 중급
+- 박기완(5) - 중급 <img src="./md-images/kiwan.png" height = "30" width="30">
   - 사용가능 언어 : C(주 언어), Python, C++
   
   - 취미 : 산책
   
   - Contact : gioan92@naver.com
   
-- 계해범 - 초급
+- 계해범 - 초급 <img src="./md-images/haebum.png" height = "30" width="30">
   - 사용가능 언어 : Python
   - Contact : cano721@naver.com
