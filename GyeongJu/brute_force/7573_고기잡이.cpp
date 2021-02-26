@@ -21,22 +21,21 @@ int main()
 	{
 		for (int j = 0; j < v.size(); j++)
 		{
-			int r = v[i].first;
-			int c = v[j].second;
-
 			for (int l = 1; l < I / 2; l++)
 			{
-				//l : ¼¼·Î, m : °¡·Î
+				int r = v[i].first;
+				int c = v[j].second;
+				//l : ì„¸ë¡œ, m : ê°€ë¡œ
 				int m = I / 2 - l;
 				if (l < N && m < N)
 				{
-					while (r + l > N)
+					if (r + l > N)
 					{
-						r--;
+						r = N - l;
 					}
-					while(c + m > N)
+					if (c + m > N)
 					{
-						c--;
+						c = N - m;
 					}
 					int cnt = 0;
 					for (int k = 0; k < v.size(); k++)
