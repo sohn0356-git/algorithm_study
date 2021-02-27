@@ -45,10 +45,10 @@ clock = clock - timedelta(minutes=45)
 clock = clock.strftime("%H %M")
 print(clock)
 
-h, m = map(int,input().split())
-if m>=45:
-    print("{} {}".format(h,m-45))
-elif m<45 and h>=1:
-    print("{} {}".format(h-1,60-45+m))
-else:
-    print("{} {}".format(23,60-45+m))
+# h, m = map(int,input().split())
+# if m>=45:
+#     print("{} {}".format(h,m-45))
+# elif m<45 and h>=1:
+#     print("{} {}".format(h-1,60-45+m))
+# else:
+#     print("{} {}".format(23,60-45+m))
