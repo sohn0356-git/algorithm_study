@@ -56,3 +56,27 @@ print(hs)
 
 ```
 
+
+
+```python
+1977
+
+m = int(input())
+n = int(input())
+result = []
+for i in range(1, 10001):
+    sq = i * i
+    if sq >= m and sq <= n:
+        result.append(sq)
+
+if len(result) == 0:
+    print(-1)
+else:
+    print(sum(result))
+    print(result[0])
+    
+#조금 무식하게 풀은거 같긴 하지만 어쨌든 풀었습니다.
+#근데 여기 찐 초급자 저 밖에 없는거 같은데 기분 탓인가요?
+#ㄹㅇ 다들 못한다고 하셨는데 다 잘해서 상처받음 
+```
+
