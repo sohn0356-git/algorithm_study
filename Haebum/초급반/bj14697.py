@@ -44,3 +44,6 @@ for i in range(n+1): #첫번째 방 몇개
                 break
 
 print(answer)
+
+##시간복잡도
+(10*2)**3 == 10**6
