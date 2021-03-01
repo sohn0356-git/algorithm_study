@@ -65,4 +65,6 @@ def answer(k): #답인지 아닌지 확인하는 함수
 
 for i in k: #입력값에 따른 답 반환
     print(answer(i))
+
+
                 
