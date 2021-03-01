@@ -24,7 +24,7 @@
 
 
 ```python
-11021
+# 11021
 
 t = int(input())
 
@@ -39,7 +39,7 @@ for i in range(t):
 
 
 ```python
-1065
+# 1065
 
 n = int(input())
 hs = 0;
@@ -59,7 +59,7 @@ print(hs)
 
 
 ```python
-1977
+# 1977
 
 m = int(input())
 n = int(input())
@@ -78,5 +78,24 @@ else:
 #조금 무식하게 풀은거 같긴 하지만 어쨌든 풀었습니다.
 #근데 여기 찐 초급자 저 밖에 없는거 같은데 기분 탓인가요?
 #ㄹㅇ 다들 못한다고 하셨는데 다 잘해서 상처받음 
+```
+
+
+
+```python
+#2798
+
+n, m = map(int,input().split())
+alist = list(map(int,input().split()))
+result = 0
+for i in range(n):
+    for j in range(i+1,n):
+        for k in range(j+1,n):
+            if alist[i] + alist[j] + alist[k] > m:
+                continue
+            else:
+                result = max(result, alist[i] + alist[j] + alist[k])
+
+print(result)
 ```
 
