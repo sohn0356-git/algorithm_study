@@ -66,7 +66,7 @@
 n, m = map(int,input().split())
 
 used = [0]*m 
-visited = [0]*(n+1)
+visited = [0]*(n)
 # num = 0
 
 ##재귀함수(본인안에 본인이 들어가는 함수)
@@ -91,3 +91,4 @@ def solve(stage):
             visited[i] = 0
 
 solve(0)
+
