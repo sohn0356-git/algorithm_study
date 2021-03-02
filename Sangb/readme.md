@@ -23,6 +23,10 @@
 
 
 
+### 11021
+
+
+
 ```python
 # 11021
 
@@ -35,6 +39,8 @@ for i in range(t):
     
     
 ```
+
+### 1065
 
 
 
@@ -55,6 +61,10 @@ for i in range(1, n+1):
 print(hs)
 
 ```
+
+
+
+### 1977
 
 
 
@@ -82,6 +92,10 @@ else:
 
 
 
+### 2798
+
+
+
 ```python
 #2798
 
@@ -97,5 +111,35 @@ for i in range(n):
                 result = max(result, alist[i] + alist[j] + alist[k])
 
 print(result)
+```
+
+
+
+### 2846
+
+
+
+```python
+#2846
+
+n = int(input())
+hilllist = list(map(int, input().split()))
+maxhill = 0;
+uphill = [];
+
+for i in range(1, n):
+    if hilllist[i] > hilllist[i-1]:
+        maxhill += hilllist[i] - hilllist[i-1]
+        if i == n-1:
+            uphill.append(maxhill)
+
+    else:
+        uphill.append(maxhill)
+        maxhill = 0
+
+if len(uphill) == 0:
+    print(0)
+else:
+    print(max(uphill))
 ```
 
