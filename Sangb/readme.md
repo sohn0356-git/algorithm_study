@@ -23,8 +23,12 @@
 
 
 
+### 11021
+
+
+
 ```python
-11021
+# 11021
 
 t = int(input())
 
@@ -36,10 +40,12 @@ for i in range(t):
     
 ```
 
+### 1065
+
 
 
 ```python
-1065
+# 1065
 
 n = int(input())
 hs = 0;
@@ -58,8 +64,12 @@ print(hs)
 
 
 
+### 1977
+
+
+
 ```python
-1977
+# 1977
 
 m = int(input())
 n = int(input())
@@ -78,5 +88,58 @@ else:
 #조금 무식하게 풀은거 같긴 하지만 어쨌든 풀었습니다.
 #근데 여기 찐 초급자 저 밖에 없는거 같은데 기분 탓인가요?
 #ㄹㅇ 다들 못한다고 하셨는데 다 잘해서 상처받음 
+```
+
+
+
+### 2798
+
+
+
+```python
+#2798
+
+n, m = map(int,input().split())
+alist = list(map(int,input().split()))
+result = 0
+for i in range(n):
+    for j in range(i+1,n):
+        for k in range(j+1,n):
+            if alist[i] + alist[j] + alist[k] > m:
+                continue
+            else:
+                result = max(result, alist[i] + alist[j] + alist[k])
+
+print(result)
+```
+
+
+
+### 2846
+
+
+
+```python
+#2846
+
+n = int(input())
+hilllist = list(map(int, input().split()))
+maxhill = 0;
+uphill = [];
+
+for i in range(1, n):
+    if hilllist[i] > hilllist[i-1]:
+        maxhill += hilllist[i] - hilllist[i-1]
+        if i == n-1:
+            uphill.append(maxhill)
+
+    else:
+        uphill.append(maxhill)
+        maxhill = 0
+
+if len(uphill) == 0:
+    print(0)
+else:
+    print(max(uphill))
 ```
 
