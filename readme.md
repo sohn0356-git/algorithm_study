@@ -16,6 +16,8 @@
 
 * 과제 commit시 commit msg로 꼭 작성날짜 입력해주기
 
+* 문제 앞에 * <img src="./md-images/dangerous.png" height = "30" width="30">가 있을 경우 함정문제이니 조심하기 바랍니다.
+
 * How to push
 
   * git 생성
