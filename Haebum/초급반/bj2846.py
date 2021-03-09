@@ -36,9 +36,8 @@ if n == len(m):
         else: #오르막길이 끝났거나 내리막길일 경우
             uphill.append(uphillTemp) #현재까지 총 증가된 높이를 오르막길에 추가
             uphillTemp = 0 #초기화
-if uphill: #오르막길 존재 시
-    print(max(uphill))
-else: #오르막길 존재 안할 시
-    print(0)
+
+print(max(uphill))
+
 
 #시간복잡도 1000 10**3
