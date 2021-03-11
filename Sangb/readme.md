@@ -143,3 +143,37 @@ else:
     print(max(uphill))
 ```
 
+
+
+### 15649
+
+
+
+```python
+n, m = map(int,input().split())
+used = [0] * m #이거는 왜 하는거며...
+visited = [0] * (n+1) #얘도 왜 하는걸까...
+print(used)
+print(visited)
+def solve(stage):
+    if stage == m:
+        for i in used:
+            print(i, end=' ')
+        print()
+        return
+
+    for i in range(1, n+1):
+        if visited[i] == 0:
+            visited[i] = 1
+            print(visited)      
+            used[stage] = i
+            print(used)
+            solve(stage+1)
+            visited[i] = 0
+
+solve(0)
+#print를 찍어가면서 보긴 했는데 이해는 되는데 코드를 어떻게 짜는지는 모르겠다..
+```
+
+
+
