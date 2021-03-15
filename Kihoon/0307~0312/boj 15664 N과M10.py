@@ -1,0 +1,34 @@
+# N개의 자연수 중에서 M개를 고른 수열
+# 고른 수열은 비내림차순이어야 한다.
+# 길이가 K인 수열 A가 A1 ≤ A2 ≤ ... ≤ AK-1 ≤ AK를 만족하면, 비내림차순이라고 한다.
+
+N, M = map(int, input().split())
+
+used = [0]*M
+visited = [0]*N
+card = list(map(int, input().split()))
+card.sort()
+
+for i in range(1,N+1):
+    card.append(i)
+
+def solve(stage): #재귀함수
+    ck = 0
+    if stage==M:
+        for i in used:
+            print(card[i], end=' ')
+        print()
+        #print(used)
+        return
+
+    for i in range(N):
+        if stage > 0 and i < used[stage - 1]:
+            continue
+        if visited[i]==0 and ck != card[i]:
+            visited[i] = 1
+            used[stage] = i
+            ck = card[i]
+            solve(stage + 1)
+            visited[i] = 0
+
+solve(0)
