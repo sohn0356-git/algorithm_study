@@ -84,7 +84,7 @@ def solve(stage):
         print()
         return
     for i in range(1,n+1):
-        if visited[i] ==0:
+        if visited[i] == 0:
             visited[i] = 1
             used[stage] = i
             solve(stage+1)
