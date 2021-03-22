@@ -1,8 +1,5 @@
-# 오르막길 출처다국어분류 Bronze II
-# 난이도 제공: solved.ac
-# 시간 제한	메모리 제한	제출	정답	맞은 사람	정답 비율
-# 1 초	128 MB	8873	3555	3046	40.776%
-# 문제
+#2846
+
 # 상근이는 자전거를 타고 등교한다. 자전거 길은 오르막길, 내리막길, 평지로 이루어져 있다. 상근이는 개강 첫 날 자전거를 타고 가면서 일정 거리마다 높이를 측정했다. 상근이는 가장 큰 오르막길의 크기를 구하려고 한다.
 
 # 측정한 높이는 길이가 N인 수열로 나타낼 수 있다. 여기서 오르막길은 적어도 2개의 수로 이루어진 높이가 증가하는 부분 수열이다. 오르막길의 크기는 부분 수열의 첫 번째 숫자와 마지막 숫자의 차이이다.
@@ -17,28 +14,22 @@
 # 출력
 # 첫째 줄에 가장 큰 오르막길의 크기를 출력한다. 만약 오르막길이 없는 경우에는 0을 출력한다.
 
-# 예제 입력 1 
-# 8
-# 12 20 1 3 4 4 11 1
-# 예제 출력 1 
-# 8
-
 n = int(input())
-m = list(map(int,input().split()))
-uphillTemp = 0 #오르막길 높이
-uphill = [] #오르막길
-if n == len(m):
-    for i in range(1,len(m)): 
-        if m[i] > m[i-1]: #오르막길일 경우
-            uphillTemp += m[i]-m[i-1] #증가하는 높이를 temp에 담음
-            if i == (len(m)-1): #마지막이 오르막길일 경우
-                uphill.append(uphillTemp) #현재까지 총 증가된 높이를 오르막길에 추가
-        else: #오르막길이 끝났거나 내리막길일 경우
-            uphill.append(uphillTemp) #현재까지 총 증가된 높이를 오르막길에 추가
-            uphillTemp = 0 #초기화
+hilllist = list(map(int, input().split()))
+maxhill = 0;
+uphill = [];
 
-print(max(uphill))
+for i in range(1, n):
+    if hilllist[i] > hilllist[i-1]:
+        maxhill += hilllist[i] - hilllist[i-1]
+        if i == n-1:
+            uphill.append(maxhill)
 
+    else:
+        uphill.append(maxhill)
+        maxhill = 0
 
-#시간복잡도 1000 10**3
-
+if len(uphill) == 0:
+    print(0)
+else:
+    print(max(uphill))
