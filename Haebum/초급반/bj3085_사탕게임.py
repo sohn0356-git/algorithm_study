@@ -12,22 +12,22 @@ import copy
 #가로방향,세로방향 사탕 바꾸기 후
 #연속된 같은 사탕 갯수 세기
 
-#최대값 최소값 얼마정도인지
+#최대값 최소값 얼마정도인지 1~50^2
 #시간복잡도는 50**4 5**4 * 10 **4 가능
 #공간복잡도는 파악... n이 50까지가능 char이므로 1byte 50*50 = 2500byte = 2.5kb
 
-def changeGraph(graph):
+def changeBoard(graph):
     for i in range(n-1):
         for j in range(n):
-            if graph[i][j] != graph[i+1][j]:
-                graph[i][j], graph[i+1][j] = graph[i+1][j], graph[i][j]
-                answerCheck(graph)
-                graph[i][j], graph[i+1][j] = graph[i+1][j], graph[i][j]
+            if board[i][j] != board[i+1][j]:
+                board[i][j], board[i+1][j] = board[i+1][j], board[i][j]
+                answerCheck(board)
+                board[i][j], board[i+1][j] = board[i+1][j], board[i][j]
 
-            if graph[j][i] != graph[j][i+1]:
-                graph[j][i], graph[j][i+1] = graph[j][i+1], graph[j][i]
-                answerCheck(graph)
-                graph[j][i], graph[j][i+1] = graph[j][i+1], graph[j][i]
+            if board[j][i] != board[j][i+1]:
+                board[j][i], board[j][i+1] = board[j][i+1], board[j][i]
+                answerCheck(board)
+                board[j][i], board[j][i+1] = board[j][i+1], board[j][i]
 
 def answerCheck(sugar):
     global answer
@@ -53,10 +53,10 @@ def answerCheck(sugar):
             answer = witdhCnt
 
 n = int(input())
-graph = []
+board = []
 answer= 0
 for i in range(n):
-    graph.append(list(input()))
+    board.append(list(input()))
 
-changeGraph(graph)
+changeBoard(board)
 print(answer)
