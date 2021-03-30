@@ -27,7 +27,7 @@ def bfs():
             z = cur[2]
             if x>=0 and x<n and y>=0 and y<m: #이동가능한 곳일때
                 if visited[x][y][z] ==0 and graph[x][y] == 0: #방문안했고 벽이 아니다!
-                    visited[x][y][z] = visited[cur[0]][cur[1]][cur[2]] +1 #방문한곳의 깊이는 이전이동횟수의 +1
+                    visited[x][y][z] = visited[cur[0]][cur[1]][cur[2]] +1 #방문한곳의 이동횟수 이전이동횟수의 +1
                     queue.append([x,y,z]) #좌표와 기존에 벽부순 유무 저장
                 elif z == 0 and visited[x][y][z] == 0 and graph[x][y] == 1: #벽을 아직 안부쉈는데 방문안했고 벽이 있다!
                     visited[x][y][1] = visited[cur[0]][cur[1]][cur[2]] +1 #벽을 부쉈고 그 좌표에 이동횟수 +1
