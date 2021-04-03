@@ -1,16 +1,13 @@
-a = [1,2,[4,5,6]]
-b= a   #shallow copy
-print(b) # [1,2,3]
-b[1] = 3    # b의 1번자리를 3으로 변경
-print(b) # [1,3,3]
-b[2]
-print(a) # [1,3,3] b를 변경했지만 a도 같이 변경됨!
+import sys
 
-import copy
+p, n = map(int,input().split())
+v = list(map(int,input().split()))
+answer = 0
+divnum = 1000000007
+for i in range(n):
+    answer += v[i] %divnum
+    if i == n-1:
+        break
+    answer *= p %divnum
 
-a = [1,2,[4,5,6]]
-b = copy.deepcopy(a)
-print(b)
-b[1] = 2
-print(b)
-print(a)
+print(answer%divnum)

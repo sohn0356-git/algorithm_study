@@ -41,7 +41,7 @@ def bfs(w,h):
                         if x>=0 and x<h and y>=0 and y<w:
                             if graph[x][y] == 1 and visited[x][y] == 0:
                                 visited[x][y] = 1
-                                queue.appendleft([x,y])
+                                queue.append([x,y])
     print(cnt)
     # except:
     #     print(0)

@@ -27,4 +27,6 @@ def solve(a,b):
 a, b, c = map(int,input().split())
 print(solve(a,b)%c)
 
+map(int,input().split())
+
 
