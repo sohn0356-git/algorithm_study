@@ -4,7 +4,7 @@
 # 안전구역 파악하여 정답 비교
 
 #시간복잡도는 벽3개 다 짓는데 8**6 체크하는데 3*8**2 총 8**8 언저리
-#
+#공간복잡도 grraph 8*8*4**3 + queue.. 
 
 from collections import deque
 
