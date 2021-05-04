@@ -1,24 +1,16 @@
 import sys
 from collections import deque
 
-tc = int(sys.stdin.readline())
-for i in range(tc):
-    n = int(sys.stdin.readline())
-    graph = [[]*(n+1) for _ in range(n+1)]
-    indegree = [0]*(n+1)
-    answer = []
-    last_year = list(map(int,sys.stdin.readline().split()))
-    newRanking = int(sys.stdin.readline())
-    for _ in range(newRanking):
-        a,b = map(int,sys.stdin.readline().split())
-        graph[a].append(b)
-        indegree[b] += 1
-    
+def topological():
     queue = deque()
 
-    for _ in last_year:
+    #진입차수 0 -> queue 삽입
+    for _ in range(1,n+1):
         if indegree[_] == 0:
-            queue.append(_)
+            queue.append(i)
+
+    #위상정렬
+    answer = []
 
     while queue:
         cur = queue.popleft()
@@ -29,9 +21,48 @@ for i in range(tc):
             indegree[next] -= 1
             if indegree[next] == 0:
                 queue.append(next)
+                if len(queue) >=2:
+                    return "?"
+
+    return answer
+
+
+tc = int(sys.stdin.readline())
+
+for i in range(tc):
+    n = int(sys.stdin.readline())
+    graph = [[False]*(n+1) for _ in range(n+1)]
+    indegree = [0]*(n+1)
+    last_year = list(map(int,sys.stdin.readline().split()))
+    newRanking = int(sys.stdin.readline())
+
+    #작년결과를 토대로 설정 
+    for x in range(n):
+        for y in range(i+1,n):
+            graph[last_year[x]][last_year[y]] = True
+            indegree[last_year[y]] += 1
+
+    #순위변동
+    for _ in range(newRanking):
+        a,b = map(int,sys.stdin.readline().split())
+        if not graph[a][b]:
+            graph[b][a] = False
+            indegree[b] += 1
+            graph[a][b] = True
+            indegree[a] -= 1
+        else:
+            graph[b][a] = True
+            indegree[b] -= 1
+            graph[a][b] = False
+            indegree[a] += 1
+
     
+    answer = topological()
+
     if len(answer) != n:
         print("IMPOSSIBLE")
+    elif answer == "?":
+        print(answer)
     elif newRanking==0:
         for _ in last_year:
             print(_,end=" ")
