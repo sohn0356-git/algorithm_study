@@ -1,30 +1,27 @@
 from collections import deque
 
-n,m = map(int,input().split())
+N, M = map(int, input().split())
+graph = [[] for _ in range(N+1)]
+indegree = [0] * (N+1)
 
-graph= [[] for _ in range(n+1)]
-inDegree = [0]*(n+1)
+for i in range(M):
+    a, b = map(int, input().split())
+    graph[a].append(b)
+    indegree[b] += 1
+
 queue = deque()
-
-for i in range(m):
-    a,b = map(int,input().split())
-    graph[a] = graph.append(b)
-    inDegree[b] += 1
-
-for i in range(1,n+1):
-    if inDegree[i]==0:
+for i in range(1,N+1):
+    if indegree[i] == 0:
         queue.append(i)
 
 while queue:
     cur = queue.popleft()
-    print(cur,end=" ")
-
-    for i in range(1,n+1):
-        if graph[cur][i] > 0:
-            inDegree[i] -= 1
-            if inDegree[i] == 0:
-                queue.append(i)
-
+    print(cur)
+    for i in range(len(graph[cur])):
+        next = graph[cur][i]
+        indegree[next] -= 1
+        if indegree[next] == 0:
+            queue.append(next)
         
 
 #시간복잡도...
