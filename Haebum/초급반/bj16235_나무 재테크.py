@@ -7,11 +7,9 @@
 
 
 import sys
-import copy
-from collections import deque
 
 # n 밭의 크기 m 나무의 개수 k 최종년수
-n,m, k = map(int,sys.stdin.readline().split())
+n,m, k = map(int,sys.stdin.readline().split()) 
 # 밭 설정
 graph = [[[0]*2 for _ in range(n)] for _ in range(n)]
 #양분 설정
