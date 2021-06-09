@@ -1,21 +1,25 @@
-def solution(t, r):
+def solution(answers):
     answer = []
-    # 1번 리프트번호가 동일할때
-    # 티켓등급에 따라
-    # 둘다 동일하면 아이디 숫자에 따라 결정
-    sortAnswer = []
-    for i in range(len(t)):
-        sortAnswer.append([i,t[i],r[i]])
-    for x in range(len(sortAnswer)):
-        sortAnswer = sorted(sortAnswer, key = lambda x : (x[1], x[2],x[0]))
-        answer.append(sortAnswer[0][2])
-        del sortAnswer[0]
-        for x in range(len(sortAnswer)):
-            print(type(sortAnswer[1]))
-            sortAnswer[1] += 1
+    mathGiveUp1 = [1,2,3,4,5] * 2000
+    mathGiveUp2 = [2,1,2,3,2,4,2,5] * 1300
+    mathGiveUp3 = [3,3,1,1,2,2,4,4,5,5] * 1000
+    
+    num1 = 0
+    num2 = 0
+    num3 = 0
+    
+    for i in len(answers):
+        if answers[i] == mathGiveUp1[i]:
+            num1 +=1
+        if answers[i] == mathGiveUp2[i]:
+            num2 +=1
+        if answers[i] == mathGiveUp3[i]:
+            num3 +=1
+    
+    print(max(num1,num2,num3))
+        
     return answer
 
-t = [0,1,3,0]
-r = [0,1,2,3]
+ed = [1,2,3,4,5]
 
-solution(t,r)
+solution(ed)
