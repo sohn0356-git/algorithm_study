@@ -4,8 +4,6 @@
 # 해보면서 파악 예정
 
 import sys
-import copy
-from collections import deque
 
 # n 밭의 크기 m 나무의 개수 k 최종년수
 n,m, k = map(int,sys.stdin.readline().split())
@@ -43,6 +41,7 @@ for year in range(k):
                 graph[width][height].extend(temp_tree) # 산 나무리스트를 더함
     
     #가을
+    print(graph)
     for width in range(n):
         for height in range(n):
             if graph[width][height]:
