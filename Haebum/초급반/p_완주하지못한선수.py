@@ -11,6 +11,7 @@ def solution(participant, completion):
             answerList[i] -=1
         else:
             answer = i
+            break
     print(answer)
     return answer
 
