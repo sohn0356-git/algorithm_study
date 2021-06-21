@@ -19,7 +19,6 @@ def solution(genres, plays):
         answer.append(sorted_g[0][0])
         if len(sorted_g) > 1:
             answer.append(sorted_g[1][0])
-    print(answer)
     return answer
 
 genres = ["classic", "pop", "classic", "classic", "pop"]
