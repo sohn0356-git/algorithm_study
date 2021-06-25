@@ -25,5 +25,4 @@ def solution(jobs):
             #시간이 흐름
             after += 1
     
-    
     return answer
