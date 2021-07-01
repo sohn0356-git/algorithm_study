@@ -1,25 +1,45 @@
-def solution(answers):
-    answer = []
-    mathGiveUp1 = [1,2,3,4,5] * 2000
-    mathGiveUp2 = [2,1,2,3,2,4,2,5] * 1300
-    mathGiveUp3 = [3,3,1,1,2,2,4,4,5,5] * 1000
-    
-    num1 = 0
-    num2 = 0
-    num3 = 0
-    
-    for i in len(answers):
-        if answers[i] == mathGiveUp1[i]:
-            num1 +=1
-        if answers[i] == mathGiveUp2[i]:
-            num2 +=1
-        if answers[i] == mathGiveUp3[i]:
-            num3 +=1
-    
-    print(max(num1,num2,num3))
-        
-    return answer
+def Find(x):
+    global parent
+    if x == parent[x]:
+        return x
+    else:
+        y= Find(parent[x])
+        parent[x] = y
+        return y
 
-ed = [1,2,3,4,5]
+    # else :
+    #     parent[x] = Find(parent[x])
+    #     return parent[x]
 
-solution(ed)
+def Union(x,y):
+    x = Find(x)
+    y = Find(y)
+
+    if x==y:
+        return
+    parent[x] = y
+
+N = 10
+parent = [0]*(N+1)
+
+for i in range(1,N+1):
+    parent[i] = i
+
+Union(4,3)
+print(parent)
+Union(3,2)
+print(parent)
+Union(2,1)
+print(parent)
+# Union(1,4)
+# Union(4,10)
+# Union(7,9)
+# Union(5,9)
+Find(3)
+print(parent)
+# if Find(4) == Find(5):
+#     print("Team")
+# else:
+#     print("Not team")
+
+# print(parent[1:])
