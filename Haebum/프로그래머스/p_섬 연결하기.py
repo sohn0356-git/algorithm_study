@@ -1,8 +1,8 @@
 def solution(n, costs):
-    
     answer = 0
     costs.sort(key=lambda x:x[2])
-    parent = [i for i in range(n+1)] 
+    parent = [i for i in range(n+1)]
+    
 
     # 부모 노드 찾기
     def find(cost):
@@ -18,6 +18,7 @@ def solution(n, costs):
         y = find(y)
         if x!=y:
             parent[y] = x
+
     for cList in costs:
         startIsland = cList[0]
         endIsland = cList[1]
