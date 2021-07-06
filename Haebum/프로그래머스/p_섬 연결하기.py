@@ -1,7 +1,10 @@
+# 크루스칼에 의한 풀이
+# union-find 이용
+
 def solution(n, costs):
     answer = 0
-    costs.sort(key=lambda x:x[2])
-    parent = [i for i in range(n+1)]
+    costs.sort(key=lambda x:x[2]) #비용순으로 정렬
+    parent = [i for i in range(n+1)] #부모노드 초기설정
     
 
     # 부모 노드 찾기
@@ -23,8 +26,8 @@ def solution(n, costs):
         startIsland = cList[0]
         endIsland = cList[1]
         cost = cList[2]
-        if find(startIsland) != find(endIsland):
-            union(startIsland,endIsland)
+        if find(startIsland) != find(endIsland): #둘이 이어져 있지않다면
+            union(startIsland,endIsland) #이어주기
             answer += cost
     print(answer)
     return answer

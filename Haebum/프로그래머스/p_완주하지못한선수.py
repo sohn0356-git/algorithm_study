@@ -1,12 +1,12 @@
 def solution(participant, completion):
     answer = ''
     answerList = {}
-    for key in completion:
-        if key in answerList:
-            answerList[key] +=1
-        else:
-            answerList[key] = 1
-    for i in participant:
+    for key in completion: #for문을 돌며
+        if key in answerList: #정답 해시에 있을 경우
+            answerList[key] +=1 # 벨류 +1 증가
+        else: #없으면
+            answerList[key] = 1 #해시 생성
+    for i in participant: #도착자 체크
         if i in answerList and answerList[i] >0:
             answerList[i] -=1
         else:

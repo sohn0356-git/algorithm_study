@@ -1,5 +1,4 @@
 import sys
-from types import new_class
 
 def find(x):
     if x == par[x]:
@@ -26,10 +25,10 @@ for _ in range(tc):
     for _ in range(fnum): #10^6
         one, two = sys.stdin.readline().replace("\n","").split(" ")
 
-        if one not in par:
+        if not par.get(one):
             par[one] = one
             num[one] = 1
-        if two not in par:
+        if not par.get(two):
             par[two] = two
             num[two] = 1
         union(one,two)
