@@ -1,3 +1,5 @@
+# dp 풀이
+
 def solution(m, n, puddles):
     answer = 0
     dp = [[0]*(m+1) for _ in range(n+1)]
@@ -5,7 +7,7 @@ def solution(m, n, puddles):
     num = 1000000007
     for i in range(1,n+1):
         for j in range(1,m+1):
-            if [j,i] in puddles:
+            if [j,i] in puddles: #해당 좌표 웅덩이시 처리
                 pass
             elif i==1 and j==1:
                 pass
