@@ -1,5 +1,4 @@
-from itertools import product
-
+#해시 이용한 풀이
 def solution(clothes):
     answer = 1
     camouflage = dict()

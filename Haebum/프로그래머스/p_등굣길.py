@@ -9,9 +9,9 @@ def solution(m, n, puddles):
         for j in range(1,m+1):
             if [j,i] in puddles: #해당 좌표 웅덩이시 처리
                 pass
-            elif i==1 and j==1:
+            elif i==1 and j==1: #초기값 패스
                 pass
-            else:
+            else: #그외 좌표
                 if j-1 < 1:
                     dp[i][j] = dp[i-1][j]%num
                 elif i-1 < 1:
