@@ -25,7 +25,6 @@ for i in range(e):
     checkLine[v1].append([weight,v1,v2])
     checkLine[v2].append([weight,v2,v1])
 
-
 # 시작지점 넣기
 visited[1] = 1
 adjacent_line = checkLine[1]
