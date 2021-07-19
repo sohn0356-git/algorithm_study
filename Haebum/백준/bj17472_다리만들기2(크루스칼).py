@@ -110,15 +110,15 @@ check2 = set()
 for length,island1,island2 in briges:
     if find(island1) != find(island2):
         union(island1,island2)
-        check2.add(island1)
+        check2.add((island1,island2))
         check2.add(island2)
         check += 1
         minLength += length
 
+
+
 #섬의개수랑 확인
-if check == islandNum-1:
+if len(check2) == islandNum:
     print(minLength)
-    print(check2)
-    print(len(check2))
 else:
     print(-1)
