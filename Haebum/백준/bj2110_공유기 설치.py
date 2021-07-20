@@ -37,7 +37,7 @@ def binary(start,end):
             if home[i] >= current + distance:
                 count +=1 #공유기 설치
                 current = home[i] #현재 좌표를 공유기 설치집으로 이동
-        
+
         # 공유기 설치 개수가 많거나 같다면
         if c <= count:
             global answer
