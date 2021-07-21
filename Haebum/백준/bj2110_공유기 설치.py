@@ -1,5 +1,4 @@
 import sys
-import math
 
 # 이분탐색 풀이
 # 좌표를 기준으로 공유기 간 최대거리를 구하여
