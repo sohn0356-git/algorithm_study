@@ -31,13 +31,13 @@ def binary(start,end):
             num = mid // i
             count += num
         #인원 적으면 시간증가
-        if count <= m:
-            global answer
+        if count < m:
             start = mid +1
-            answer = mid
         #인원 많으면 시간감소
         else:
+            global answer
             end = mid -1
+            answer = mid
 
 
 binary(start,end)
