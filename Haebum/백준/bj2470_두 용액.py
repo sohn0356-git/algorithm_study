@@ -10,7 +10,7 @@ nlist = list(map(int,sys.stdin.readline().split()))
 nlist.sort()
 
 #두 용액
-minNum = 0
+minNum = 0 
 maxNum = n-1
 
 #정답찾기

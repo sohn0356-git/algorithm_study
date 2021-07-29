@@ -49,8 +49,8 @@ for i in range(tc):
     last_year = list(map(int,sys.stdin.readline().split())) #작년순위
     m = int(sys.stdin.readline()) #순위 변동 수
 
-    # 자신보다 순위가 낮은값으로 연결
-    # ex) graph[5][4] = true , graph[5][3] = true ... graph[4][3] = true 5가 4보다 순위가 높으면 트루
+    # 자신보다 순위 숫자가 낮은값으로 연결
+    # ex) graph[5][4] = true , graph[5][3] = true ... graph[4][3] = true 5가 4보다 순위 숫자가 높으면 트루
     # indgree도 증가
     for x in range(n):
         for y in range(x+1,n):
@@ -65,7 +65,7 @@ for i in range(tc):
             indegree[a] -= 1 #진입차수 다시 감소
             graph[a][b] = True # a>b로 변경 (그래프 이어진걸로)
             indegree[b] += 1 #진입차수 증가
-        else: # a>b일때 -> a<b로 변경
+        else: # a>b일때 -> b>a로 변경
             graph[b][a] = True
             indegree[a] += 1
             graph[a][b] = False
